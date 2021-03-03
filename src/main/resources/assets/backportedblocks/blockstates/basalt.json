@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "variant": {
+      "normal": {"model": "backportedblocks:raw_basalt"},
+      "polished": {"model": "backportedblocks:polished_basalt"},
+      "smooth": {"model": "backportedblocks:smooth_basalt"}
+    },
+    "axis": {
+      "y": {},
+      "x": {"x": 90, "y": 90},
+      "z": {"x": 90}
+    }
+  }
+}

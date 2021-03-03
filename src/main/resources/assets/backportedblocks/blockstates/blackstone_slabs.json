@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "half_slab",
+    "textures": {
+      "bottom": "backportedblocks:blocks/blackstone_top",
+      "top": "backportedblocks:blocks/blackstone_top",
+      "side": "backportedblocks:blocks/blackstone"
+    }
+  },
+  "variants": {
+    "inventory": [{}],
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
+  }
+}

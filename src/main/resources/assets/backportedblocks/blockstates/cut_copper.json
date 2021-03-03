@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "variant": {
+      "normal": {"model": "backportedblocks:cut_copper"},
+      "lightly_weathered": {"model": "backportedblocks:lightly_weathered_cut_copper"},
+      "semi_weathered": {"model": "backportedblocks:semi_weathered_cut_copper"},
+      "weathered": {"model": "backportedblocks:weathered_cut_copper"}
+    }
+  }
+}

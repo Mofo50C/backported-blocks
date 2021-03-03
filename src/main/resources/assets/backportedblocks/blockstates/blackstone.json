@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "variant": {
+      "normal": {"model": "backportedblocks:blackstone"},
+      "polished": {"model": "backportedblocks:polished_blackstone"},
+      "chiseled": {"model": "backportedblocks:chiseled_blackstone"},
+      "bricks": {"model": "backportedblocks:polished_blackstone_bricks"},
+      "cracked": {"model": "backportedblocks:cracked_blackstone_bricks"}
+    }
+  }
+}

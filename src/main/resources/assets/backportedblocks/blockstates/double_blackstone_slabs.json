@@ -1,0 +1,11 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "backportedblocks:blackstone"
+  },
+  "variants": {
+    "inventory": [{}],
+    "half=top": [{}],
+    "half=bottom": [{}]
+  }
+}

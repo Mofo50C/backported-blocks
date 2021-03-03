@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "backportedblocks:blackstone",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "backportedblocks:blackstone",
+    "data": 1,
+    "count": 4
+  }
+}

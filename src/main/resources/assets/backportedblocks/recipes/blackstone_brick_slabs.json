@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "backportedblocks:blackstone",
+      "data": 3
+    }
+  },
+  "result": {
+    "item": "backportedblocks:blackstone_brick_slabs",
+    "count": 6
+  }
+}

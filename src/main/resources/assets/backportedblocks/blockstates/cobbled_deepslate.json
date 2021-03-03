@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "variant": {
+      "normal": {"model": "backportedblocks:cobbled_deepslate"},
+      "polished": {"model": "backportedblocks:polished_deepslate"},
+      "chiseled": {"model": "backportedblocks:chiseled_deepslate"}
+    }
+  }
+}

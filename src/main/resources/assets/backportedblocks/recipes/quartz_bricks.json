@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "backportedblocks:quartz_bricks",
+    "count": 4
+  }
+}

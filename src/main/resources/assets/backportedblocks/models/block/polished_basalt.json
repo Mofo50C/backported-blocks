@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "backportedblocks:blocks/polished_basalt_side",
+    "end": "backportedblocks:blocks/polished_basalt_top"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "backportedblocks:copper_block",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "backportedblocks:cut_copper",
+    "data": 2,
+    "count": 4
+  }
+}

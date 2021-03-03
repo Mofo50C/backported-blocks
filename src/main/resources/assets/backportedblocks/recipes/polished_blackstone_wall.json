@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "backportedblocks:blackstone",
+      "data": 1
+    }
+  },
+  "result": {
+    "item": "backportedblocks:polished_blackstone_wall",
+    "count": 6
+  }
+}

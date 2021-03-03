@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+    "variant": {
+      "normal": {"model": "backportedblocks:deepslate"},
+      "tiles": {"model": "backportedblocks:deepslate_tiles"},
+      "bricks": {"model": "backportedblocks:deepslate_bricks"}
+    }
+  }
+}

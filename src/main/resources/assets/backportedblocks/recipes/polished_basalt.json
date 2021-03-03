@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "backportedblocks:basalt",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "backportedblocks:basalt",
+    "data": 1,
+    "count": 4
+  }
+}

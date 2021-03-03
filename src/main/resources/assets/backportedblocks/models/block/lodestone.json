@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "backportedblocks:blocks/lodestone_top",
+    "side": "backportedblocks:blocks/lodestone_side"
+  }
+}

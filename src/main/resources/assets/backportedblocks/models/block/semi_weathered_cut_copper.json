@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "backportedblocks:blocks/semi_weathered_cut_copper"
+  }
+}

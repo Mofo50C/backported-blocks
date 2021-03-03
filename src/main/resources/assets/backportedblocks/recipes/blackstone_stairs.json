@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "backportedblocks:blackstone",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "backportedblocks:blackstone_stairs",
+    "count": 8
+  }
+}

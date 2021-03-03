@@ -1,0 +1,16 @@
+[
+{
+  "modid": "backportedblocks",
+  "name": "Backported Blocks",
+  "description": "Adds backported blocks from 1.16 & 1.17",
+  "version": "1.2",
+  "mcversion": "1.12.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mofo"],
+  "credits": "Me for code, mojang for textures",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

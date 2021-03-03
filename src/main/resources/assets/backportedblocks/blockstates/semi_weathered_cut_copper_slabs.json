@@ -1,0 +1,19 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "half_slab",
+    "textures": {
+      "bottom": "backportedblocks:blocks/semi_weathered_cut_copper",
+      "top": "backportedblocks:blocks/semi_weathered_cut_copper",
+      "side": "backportedblocks:blocks/semi_weathered_cut_copper"
+    }
+  },
+  "variants": {
+    "inventory": [{}],
+    "half=top": [{
+      "x": 180,
+      "uvlock": true
+    }],
+    "half=bottom": [{}]
+  }
+}

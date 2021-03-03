@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "backportedblocks:deepslate",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "backportedblocks:deepslate_tile_wall",
+    "count": 6
+  }
+}
