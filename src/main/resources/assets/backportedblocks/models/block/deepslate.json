@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube_column",
   "textures": {
-    "all": "backportedblocks:blocks/deepslate_top"
+    "end": "backportedblocks:blocks/deepslate_top",
+    "side": "backportedblocks:blocks/deepslate"
   }
 }

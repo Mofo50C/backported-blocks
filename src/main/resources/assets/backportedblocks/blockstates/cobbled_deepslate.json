@@ -6,7 +6,11 @@
     "variant": {
       "normal": {"model": "backportedblocks:cobbled_deepslate"},
       "polished": {"model": "backportedblocks:polished_deepslate"},
-      "chiseled": {"model": "backportedblocks:chiseled_deepslate"}
+      "chiseled": {"model": "backportedblocks:chiseled_deepslate"},
+      "bricks": {"model": "backportedblocks:deepslate_bricks"},
+      "tiles": {"model": "backportedblocks:deepslate_tiles"},
+      "cracked_bricks": {"model": "backportedblocks:cracked_deepslate_bricks"},
+      "cracked_tiles": {"model": "backportedblocks:cracked_deepslate_tiles"}
     }
   }
 }

@@ -175,8 +175,8 @@ public class ModBlocks {
         stairCutCopper1 = BlockModStairs.createStairFromVariant(registry, "lightly_weathered_cut_copper_stairs", blockCutCopper, BlockCutCopper.VARIANT, BlockCopper.EnumWeathered.LIGHTLY);
         stairCutCopper2 = BlockModStairs.createStairFromVariant(registry, "semi_weathered_cut_copper_stairs", blockCutCopper, BlockCutCopper.VARIANT, BlockCopper.EnumWeathered.SEMI);
         stairCutCopper3 = BlockModStairs.createStairFromVariant(registry, "weathered_cut_copper_stairs", blockCutCopper, BlockCutCopper.VARIANT, BlockCopper.EnumWeathered.FULLY);
-        stairDeepslateTiles = BlockModStairs.createStairFromVariant(registry, "deepslate_tile_stairs", blockDeepslate, BlockDeepslate.VARIANT, BlockDeepslate.EnumType.TILES);
-        stairDeepslateBricks = BlockModStairs.createStairFromVariant(registry, "deepslate_brick_stairs", blockDeepslate, BlockDeepslate.VARIANT, BlockDeepslate.EnumType.BRICKS);
+        stairDeepslateTiles = BlockModStairs.createStairFromVariant(registry, "deepslate_tile_stairs", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.TILES);
+        stairDeepslateBricks = BlockModStairs.createStairFromVariant(registry, "deepslate_brick_stairs", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.BRICKS);
         stairDeepslatePolished = BlockModStairs.createStairFromVariant(registry, "polished_deepslate_stairs", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.POLISHED);
         stairDeepslateCobbled = BlockModStairs.createStairFromVariant(registry, "cobbled_deepslate_stairs", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.NORMAL);
         stairBlackstone = BlockModStairs.createStairFromVariant(registry, "blackstone_stairs", blockBlackstone, BlockBlackstone.VARIANT, BlockBlackstone.EnumType.NORMAL);
@@ -212,8 +212,8 @@ public class ModBlocks {
 
         wallDeepslateCobbled = BlockModWall.createWallFromVariant(registry, "cobbled_deepslate_wall", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.NORMAL);
         wallDeepslatePolished = BlockModWall.createWallFromVariant(registry, "polished_deepslate_wall", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.POLISHED);
-        wallDeepslateTiles = BlockModWall.createWallFromVariant(registry, "deepslate_tile_wall", blockDeepslate, BlockDeepslate.VARIANT, BlockDeepslate.EnumType.TILES);
-        wallDeepslateBricks = BlockModWall.createWallFromVariant(registry, "deepslate_brick_wall", blockDeepslate, BlockDeepslate.VARIANT, BlockDeepslate.EnumType.BRICKS);
+        wallDeepslateTiles = BlockModWall.createWallFromVariant(registry, "deepslate_tile_wall", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.TILES);
+        wallDeepslateBricks = BlockModWall.createWallFromVariant(registry, "deepslate_brick_wall", blockCobbledDeepslate, BlockCobbledDeepslate.VARIANT, BlockCobbledDeepslate.EnumType.BRICKS);
         wallBlackstone = BlockModWall.createWallFromVariant(registry, "blackstone_wall", blockBlackstone, BlockBlackstone.VARIANT, BlockBlackstone.EnumType.NORMAL);
         wallPolishedBlackstone = BlockModWall.createWallFromVariant(registry, "polished_blackstone_wall", blockBlackstone, BlockBlackstone.VARIANT, BlockBlackstone.EnumType.POLISHED);
         wallBlackstoneBricks = BlockModWall.createWallFromVariant(registry, "blackstone_brick_wall", blockBlackstone, BlockBlackstone.VARIANT, BlockBlackstone.EnumType.BRICKS);

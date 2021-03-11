@@ -6,13 +6,13 @@
   ],
   "key": {
     "S": {
-      "item": "backportedblocks:deepslate",
-      "data": 0
+      "item": "backportedblocks:cobbled_deepslate",
+      "data": 1
     }
   },
   "result": {
-    "item": "backportedblocks:deepslate",
-    "data": 1,
+    "item": "backportedblocks:cobbled_deepslate",
+    "data": 3,
     "count": 4
   }
 }

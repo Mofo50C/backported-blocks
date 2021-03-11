@@ -33,6 +33,8 @@ public class CommonProxy {
         GameRegistry.addSmelting(new ItemStack(ModBlocks.blockBasalt, 1, 0), new ItemStack(ModBlocks.blockBasalt, 1, 2), 0.1f);
         GameRegistry.addSmelting(new ItemStack(ModBlocks.blockBlackstone, 1, 3), new ItemStack(ModBlocks.blockBlackstone, 1, 4), 0.1f);
         GameRegistry.addSmelting(new ItemStack(netherBrick, 1, 0), new ItemStack(ModBlocks.blockNetherBricks, 1, 0), 0.1f);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.blockCobbledDeepslate, 1, 3), new ItemStack(ModBlocks.blockCobbledDeepslate, 1, 5), 0.1f);
+        GameRegistry.addSmelting(new ItemStack(ModBlocks.blockCobbledDeepslate, 1, 4), new ItemStack(ModBlocks.blockCobbledDeepslate, 1, 6), 0.1f);
     }
 
     @SubscribeEvent

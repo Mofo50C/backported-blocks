@@ -9,10 +9,15 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.registries.IForgeRegistry;
 
@@ -20,11 +25,12 @@ import java.util.Random;
 
 public class BlockDeepslate extends BlockModGeneric {
 
+    public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.create("axis", EnumFacing.Axis.class);
     public static final PropertyEnum<EnumType> VARIANT = PropertyEnum.create("variant",EnumType.class);
 
     public BlockDeepslate(IForgeRegistry<Block> registry) {
         super(registry, "deepslate", Material.ROCK, 3f, 6f, SoundType.STONE, "pickaxe", 1);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumType.NORMAL));
+        this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumType.NORMAL).withProperty(AXIS, EnumFacing.Axis.Y));
     }
 
     @Override
@@ -44,19 +50,46 @@ public class BlockDeepslate extends BlockModGeneric {
     }
 
     @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
+        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand).withProperty(AXIS, facing.getAxis());
+    }
+
+    @Override
     @SuppressWarnings("deprecation")
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(VARIANT, EnumType.byMetadata(meta));
+        EnumFacing.Axis axisState = EnumFacing.Axis.Y;
+
+        switch (meta & 12) {
+            case 4:
+                axisState = EnumFacing.Axis.X;
+                break;
+            case 8:
+                axisState = EnumFacing.Axis.Z;
+                break;
+        }
+        IBlockState state = this.getDefaultState().withProperty(VARIANT, EnumType.byMetadata(meta & 3));
+        return (meta == 1) ? state.withProperty(AXIS, EnumFacing.Axis.Y) : state.withProperty(AXIS, axisState);
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return state.getValue(VARIANT).getMetadata();
+        int i = state.getValue(VARIANT).getMetadata();
+        if (i != 1) {
+            switch (state.getValue(AXIS)) {
+                case X:
+                    i |= 4;
+                    break;
+                case Z:
+                    i |= 8;
+                    break;
+            }
+        }
+        return i;
     }
 
     @Override
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, VARIANT);
+        return new BlockStateContainer(this, VARIANT, AXIS);
     }
 
     @Override
@@ -64,14 +97,13 @@ public class BlockDeepslate extends BlockModGeneric {
         for (EnumType type : EnumType.values()) {
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this),
                     type.getMetadata(),
-                    new ModelResourceLocation(getRegistryName(), "variant="+type.getName()));
+                    new ModelResourceLocation(getRegistryName(), "axis=y,variant="+type.getName()));
         }
     }
 
     public enum EnumType implements IStringSerializable {
         NORMAL(0, "normal", "normal"),
-        BRICKS(1, "bricks", "bricks"),
-        TILES(2, "tiles", "tiles");
+        SMOOTH(1, "smooth", "smooth");
 
         private static final EnumType[] META_LOOKUP = new EnumType[values().length];
         private final int meta;

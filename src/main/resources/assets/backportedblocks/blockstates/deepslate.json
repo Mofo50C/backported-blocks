@@ -5,8 +5,12 @@
     "inventory": [{}],
     "variant": {
       "normal": {"model": "backportedblocks:deepslate"},
-      "bricks": {"model": "backportedblocks:deepslate_bricks"},
-      "tiles": {"model": "backportedblocks:deepslate_tiles"}
+      "smooth": {"model": "backportedblocks:smooth_deepslate"}
+    },
+    "axis": {
+      "y": {},
+      "x": {"x": 90, "y": 90},
+      "z": {"x": 90}
     }
   }
 }

@@ -62,7 +62,11 @@ public class BlockCobbledDeepslate extends BlockModGeneric {
     public enum EnumType implements IStringSerializable {
         NORMAL(0, "normal", "raw"),
         POLISHED(1, "polished", "polished"),
-        CHISELED(2, "chiseled", "chiseled");
+        CHISELED(2, "chiseled", "chiseled"),
+        BRICKS(3, "bricks", "bricks"),
+        TILES(4, "tiles", "tiles"),
+        CRACKED_BRICKS(5, "cracked_bricks", "cbricks"),
+        CRACKED_TILES(6, "cracked_tiles", "ctiles");
 
         private static final BlockCobbledDeepslate.EnumType[] META_LOOKUP = new BlockCobbledDeepslate.EnumType[values().length];
         private final int meta;

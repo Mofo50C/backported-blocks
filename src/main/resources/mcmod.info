@@ -3,7 +3,7 @@
   "modid": "backportedblocks",
   "name": "Backported Blocks",
   "description": "Adds backported blocks from 1.16 & 1.17",
-  "version": "1.2",
+  "version": "1.1",
   "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
