@@ -14,7 +14,7 @@ public class BackportedBlocks {
 
     public static final String MODID = "backportedblocks";
     public static final String MODNAME = "Backported Blocks";
-    public static final String MODVERSION= "1.1";
+    public static final String MODVERSION= "1.1.1";
 
     @SidedProxy(clientSide = "com.mofo.backportedblocks.proxy.ClientProxy", serverSide = "com.mofo.backportedblocks.proxy.ServerProxy")
     public static CommonProxy proxy;

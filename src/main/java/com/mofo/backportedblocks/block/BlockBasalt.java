@@ -44,7 +44,8 @@ public class BlockBasalt extends BlockModGeneric {
 
     @Override
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand) {
-        return super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand).withProperty(AXIS, facing.getAxis());
+        IBlockState state = super.getStateForPlacement(world, pos, facing, hitX, hitY, hitZ, meta, placer, hand);
+        return ((meta & 3) == 2) ? state.withProperty(AXIS, EnumFacing.Axis.Y) : state.withProperty(AXIS, facing.getAxis());
     }
 
     @Override
@@ -61,21 +62,19 @@ public class BlockBasalt extends BlockModGeneric {
                 break;
         }
         IBlockState state = this.getDefaultState().withProperty(VARIANT, EnumType.byMetadata(meta & 3));
-        return (meta == 2) ? state.withProperty(AXIS, EnumFacing.Axis.Y) : state.withProperty(AXIS, axisState);
+        return state.withProperty(AXIS, axisState);
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
         int i = state.getValue(VARIANT).getMetadata();
-        if (i != 2) {
-            switch (state.getValue(AXIS)) {
-                case X:
-                    i |= 4;
-                    break;
-                case Z:
-                    i |= 8;
-                    break;
-            }
+        switch (state.getValue(AXIS)) {
+            case X:
+                i |= 4;
+                break;
+            case Z:
+                i |= 8;
+                break;
         }
         return i;
     }

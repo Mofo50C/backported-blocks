@@ -225,51 +225,53 @@ public class ModBlocks {
         registry.register(createItem(blockCalcite));
         registry.register(createItem(blockTuff));
         registry.register(createItem(blockSculk));
+
         registry.register(createVariantItem(blockCopper, BlockCopper.EnumWeathered.getTypeNames()));
         registry.register(createVariantItem(blockCutCopper, BlockCopper.EnumWeathered.getTypeNames()));
-        registry.register(createVariantItem(blockCobbledDeepslate, BlockCobbledDeepslate.EnumType.getTypeNames()));
+        registry.register(createItem(stairCutCopper0));
+        registry.register(createItem(stairCutCopper1));
+        registry.register(createItem(stairCutCopper2));
+        registry.register(createItem(stairCutCopper3));
+        registry.register(new ItemModSlab(slabCutCopper0, doubleSlabCutCopper0).setRegistryName(slabCutCopper0.getRegistryName()));
+        registry.register(new ItemModSlab(slabCutCopper1, doubleSlabCutCopper1).setRegistryName(slabCutCopper1.getRegistryName()));
+        registry.register(new ItemModSlab(slabCutCopper2, doubleSlabCutCopper2).setRegistryName(slabCutCopper2.getRegistryName()));
+        registry.register(new ItemModSlab(slabCutCopper3, doubleSlabCutCopper3).setRegistryName(slabCutCopper3.getRegistryName()));
+
         registry.register(createVariantItem(blockDeepslate, BlockDeepslate.EnumType.getTypeNames()));
+        registry.register(createVariantItem(blockCobbledDeepslate, BlockCobbledDeepslate.EnumType.getTypeNames()));
+        registry.register(createItem(stairDeepslateCobbled));
+        registry.register(createItem(stairDeepslateBricks));
+        registry.register(createItem(stairDeepslatePolished));
+        registry.register(createItem(stairDeepslateTiles));
+        registry.register(createItem(wallDeepslateBricks));
+        registry.register(createItem(wallDeepslateCobbled));
+        registry.register(createItem(wallDeepslatePolished));
+        registry.register(createItem(wallDeepslateTiles));
+        registry.register(new ItemModSlab(slabDeepslateCobbled, doubleSlabDeepslateCobbled).setRegistryName(slabDeepslateCobbled.getRegistryName()));
+        registry.register(new ItemModSlab(slabDeepslatePolished, doubleSlabDeepslatePolished).setRegistryName(slabDeepslatePolished.getRegistryName()));
+        registry.register(new ItemModSlab(slabDeepslateBricks, doubleSlabDeepslateBricks).setRegistryName(slabDeepslateBricks.getRegistryName()));
+        registry.register(new ItemModSlab(slabDeepslateTiles, doubleSlabDeepslateTiles).setRegistryName(slabDeepslateTiles.getRegistryName()));
+
         registry.register(createVariantItem(blockBlackstone, BlockBlackstone.EnumType.getTypeNames()));
+        registry.register(createItem(stairBlackstone));
+        registry.register(createItem(stairPolishedBlackstone));
+        registry.register(createItem(stairBlackstoneBricks));
+        registry.register(createItem(wallBlackstone));
+        registry.register(createItem(wallPolishedBlackstone));
+        registry.register(createItem(wallBlackstoneBricks));
+        registry.register(new ItemModSlab(slabBlackstone, doubleSlabBlackstone).setRegistryName(slabBlackstone.getRegistryName()));
+        registry.register(new ItemModSlab(slabPolishedBlackstone, doubleSlabPolishedBlackstone).setRegistryName(slabPolishedBlackstone.getRegistryName()));
+        registry.register(new ItemModSlab(slabBlackstoneBricks, doubleSlabBlackstoneBricks).setRegistryName(slabBlackstoneBricks.getRegistryName()));
+
         registry.register(createVariantItem(blockBasalt, BlockBasalt.EnumType.getTypeNames()));
         registry.register(createVariantItem(blockNetherBricks, BlockNetherBricks.EnumType.getTypeNames()));
         registry.register(createItem(blockQuartzBricks));
         registry.register(createItem(blockCryingObsidian));
         registry.register(createItem(blockLodestone));
+
         registry.register(createItem(blockCobblestoneBricks));
-
-        registry.register(createItem(stairCutCopper0));
-        registry.register(createItem(stairCutCopper1));
-        registry.register(createItem(stairCutCopper2));
-        registry.register(createItem(stairCutCopper3));
-        registry.register(createItem(stairDeepslateCobbled));
-        registry.register(createItem(stairDeepslateBricks));
-        registry.register(createItem(stairDeepslatePolished));
-        registry.register(createItem(stairDeepslateTiles));
-        registry.register(createItem(stairBlackstone));
-        registry.register(createItem(stairPolishedBlackstone));
-        registry.register(createItem(stairBlackstoneBricks));
         registry.register(createItem(stairCobblestoneBricks));
-
-        registry.register(createItem(wallDeepslateBricks));
-        registry.register(createItem(wallDeepslateCobbled));
-        registry.register(createItem(wallDeepslatePolished));
-        registry.register(createItem(wallDeepslateTiles));
-        registry.register(createItem(wallBlackstone));
-        registry.register(createItem(wallPolishedBlackstone));
-        registry.register(createItem(wallBlackstoneBricks));
         registry.register(createItem(wallCobblestoneBricks));
-
-        registry.register(new ItemModSlab(slabCutCopper0, doubleSlabCutCopper0).setRegistryName(slabCutCopper0.getRegistryName()));
-        registry.register(new ItemModSlab(slabCutCopper1, doubleSlabCutCopper1).setRegistryName(slabCutCopper1.getRegistryName()));
-        registry.register(new ItemModSlab(slabCutCopper2, doubleSlabCutCopper2).setRegistryName(slabCutCopper2.getRegistryName()));
-        registry.register(new ItemModSlab(slabCutCopper3, doubleSlabCutCopper3).setRegistryName(slabCutCopper3.getRegistryName()));
-        registry.register(new ItemModSlab(slabDeepslateCobbled, doubleSlabDeepslateCobbled).setRegistryName(slabDeepslateCobbled.getRegistryName()));
-        registry.register(new ItemModSlab(slabDeepslatePolished, doubleSlabDeepslatePolished).setRegistryName(slabDeepslatePolished.getRegistryName()));
-        registry.register(new ItemModSlab(slabDeepslateBricks, doubleSlabDeepslateBricks).setRegistryName(slabDeepslateBricks.getRegistryName()));
-        registry.register(new ItemModSlab(slabDeepslateTiles, doubleSlabDeepslateTiles).setRegistryName(slabDeepslateTiles.getRegistryName()));
-        registry.register(new ItemModSlab(slabBlackstone, doubleSlabBlackstone).setRegistryName(slabBlackstone.getRegistryName()));
-        registry.register(new ItemModSlab(slabPolishedBlackstone, doubleSlabPolishedBlackstone).setRegistryName(slabPolishedBlackstone.getRegistryName()));
-        registry.register(new ItemModSlab(slabBlackstoneBricks, doubleSlabBlackstoneBricks).setRegistryName(slabBlackstoneBricks.getRegistryName()));
         registry.register(new ItemModSlab(slabCobblestoneBricks, doubleSlabCobblestoneBricks).setRegistryName(slabCobblestoneBricks.getRegistryName()));
     }
 
